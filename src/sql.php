@@ -2,9 +2,11 @@
 
 $servername = "fschirmer.info";
 $username = "spacegame";
-$password = "password";
+$password = "itc2020";
+$dbname = "spacegame";
 
-$conn = new mysqli($servername, $username, $password);
+global $conn;
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 if($conn->connect_error)
 {
