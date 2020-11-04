@@ -40,15 +40,21 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
+                <br>
 
-                <br /><br />
-                <br /><br />
-                <br /><br />
-                <p> Wenn du noch keinen Account ahst, dann kannst du dich kostenlos registrieren </p>
-                <input /><br /><br />
-                <input /><br /><br />
-                <input /><br /><br />
-                <a class="btn btn-primary btn-lg" href="#" role="button">Registrieren</a>
+                <!-- IDS ÄNDERN -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">GDPR Disclaimer</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="loginPassword">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrieren</button>
+                </form>
             </div>
         <div class="col"></div>
     </div>
@@ -56,7 +62,7 @@
 
 <footer class="page-footer font-small blue">
     <div class="footer-copyright text-center py-3">© 2020 Copyright:
-        <a href="https://net.itc-dortmund.de/"> Florian Schirmer, Robin Hammerla, Max, Lucas Röhler</a>
+        <a href="https://net.itc-dortmund.de/"> Florian Schirmer, Robin Hammerla, Max Keßlau, Lucas Röhler</a>
     </div>
 </footer>
 
