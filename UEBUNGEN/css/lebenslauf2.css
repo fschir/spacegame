@@ -1,0 +1,181 @@
+body {
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size: 12pt;
+	background: #fcfcfc;
+	color: #111;
+}
+
+p {
+	border: 1px #ccc solid;
+	border-radius: 5px;
+	padding: .5ex .5em .5ex .5em;
+	background: blueviolet;
+}
+
+img {
+	border: 0;
+}
+
+button {
+	border-radius: 2px;
+}
+
+/* CV Heading Section - Fixed on top of page */
+
+#cvhead {
+	font-weight: 700;
+	font-size: 120%;
+	margin: 0 0 3ex 0;
+	height: 275px;
+	width: 100%;
+	background: chartreuse;
+	/* the following 4 lines can be removed, if a standard (non-fixed) layout should be used */
+	position: fixed;
+	top: 0;
+	border-bottom: 1px #eee solid;
+	animation: changer 150ms linear infinite;
+}
+
+#cvhead .headpic {
+	float: right;
+	max-width: 250px;
+	max-height: 270px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px grey;
+	margin: 1em 1.5em 0 2em; 
+}
+
+#cvhead h1 {
+	border-bottom: 1px #444 solid;
+	font-weight: 700;
+	margin: 0 280px 0 0;
+	animation: blinker 1s linear infinite;
+}
+
+#cvhead p{
+	font-family: 'Lobster', cursive;
+}
+
+@keyframes blinker {
+	50%{
+		opacity: 0;
+		color-interpolation: linearRGB;
+	}
+}
+
+@keyframes changer {
+	75%{
+		background-color: brown;
+	}
+
+}
+
+#cvhead h1:before {
+	font-size: 80%;
+	color: #A83535;
+	font-weight: 400;
+	content: 'Lebenslauf\A';
+	white-space:pre;
+}
+
+#cvhead p {
+	margin-right: 280px;
+	background: deepskyblue;
+}
+
+
+/* CV Body Section - sub-sections marked up with H2, P and UL tags */
+
+#cvbody {
+	font-weight: 400;
+	font-size: 100%;
+
+	/* the following line should be removed, if a standard (non-fixed) layout should be used */
+	margin-top: 280px;
+	background-color: gold;
+	font-family: 'Modak', cursive;
+}
+
+#cvbody h2 {
+	font-weight: 700;
+	color: #292e75;
+	border-bottom: 1px #ccc solid;
+	margin-top: 3ex;
+	background: fuchsia;
+}
+
+#cvbody p {
+	background: #f1f1f1;
+}
+
+#cvbody ul {
+	list-style: none;
+}
+
+#cvbody ul li .cvitemcontent{
+	margin-bottom: 1ex;
+	display: inline-block;
+}
+
+.cvitemlabel {
+	vertical-align: top;
+	display: inline-block;
+	width: 10em;
+	font-weight: 700;
+	padding-right: 1em;
+}
+
+@keyframes slide {
+	from { left: 100%;}
+	to { left: -100%;}
+}
+@-webkit-keyframes slide {
+	from { left: 100%;}
+	to { left: -100%;}
+}
+
+
+
+/*  extensions for toggling cvbody sections */
+
+#cvbody div.visible{
+	display: block;
+}
+
+#cvbody div.hidden{
+	display: none;
+}
+
+#cvbody button {
+	width: 2.5em;
+	margin-right: 1em;
+}
+
+/* CV Footer - parts marked up with P tags, but displayed in line */
+
+#cvfoot {
+	font-weight: 300;
+	font-size: 80%;
+	margin: 5ex auto 1ex auto;
+	text-align: center;
+	border-top: 1px #aaa solid;
+	padding: 1ex 0 0 0;
+	background: black;
+}
+
+#cvfoot p {
+	display: inline-block;
+	vertical-align: top;
+	border: 0;
+	border-radius: 0;
+}
+
+#cvfoot .cvfootlabel {
+	font-style: italic;
+	
+}
+
+#cvfoot a, #cvfoot a.visited {
+	text-decoration: none;
+}
+

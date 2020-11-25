@@ -1,0 +1,18 @@
+
+.navbar {
+    font-family: 'Anton', sans-serif;
+    flex-direction: row;
+}
+
+.navbar.btn {
+    left: auto;
+    right: 0px;
+}
+
+.navbar-brand {
+    padding-left: 5rem;
+}
+
+.navbar-nav {
+    padding-right: 5rem;
+}
