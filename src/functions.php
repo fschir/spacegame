@@ -3,5 +3,5 @@
 
 function showLogin()
 {
-    echo file_get_contents("../html/loginBox.html");
+    include_once __DIR__ . "/../html/loginBox.phtml";
 }
