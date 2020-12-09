@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '91c5a781691c16ee87c3eff15ec30f7ac1b67df7',
+    'reference' => 'bbe3e3695fa3ea4aaf7f1cbc6c257a012aded369',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,43 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '91c5a781691c16ee87c3eff15ec30f7ac1b67df7',
+      'reference' => 'bbe3e3695fa3ea4aaf7f1cbc6c257a012aded369',
+    ),
+    'firebase/php-jwt' => 
+    array (
+      'pretty_version' => 'v5.2.0',
+      'version' => '5.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'feb0e820b8436873675fd3aca04f3728eb2185cb',
+    ),
+    'google/apiclient' => 
+    array (
+      'pretty_version' => 'v2.8.3',
+      'version' => '2.8.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '81696e6206322e38c643cfcc96c4494ccfef8a32',
+    ),
+    'google/apiclient-services' => 
+    array (
+      'pretty_version' => 'v0.156',
+      'version' => '0.156.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2f5e54fdef034f856208328126bddd8376dae4b3',
+    ),
+    'google/auth' => 
+    array (
+      'pretty_version' => 'v1.14.3',
+      'version' => '1.14.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c1503299c779af0cbc99b43788f75930988852cf',
     ),
     'guzzlehttp/guzzle' => 
     array (
@@ -80,12 +116,12 @@ private static $installed = array (
     ),
     'monolog/monolog' => 
     array (
-      'pretty_version' => '1.0.2',
-      'version' => '1.0.2.0',
+      'pretty_version' => '1.17.2',
+      'version' => '1.17.2.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b704c49a3051536f67f2d39f13568f74615b9922',
+      'reference' => 'bee7f0dc9c3e0b69a6039697533dca1e845c8c24',
     ),
     'paragonie/random_compat' => 
     array (
@@ -95,6 +131,24 @@ private static $installed = array (
       array (
       ),
       'reference' => '996434e5492cb4c3edcb9168db6fbb1359ef965a',
+    ),
+    'phpseclib/phpseclib' => 
+    array (
+      'pretty_version' => '2.0.29',
+      'version' => '2.0.29.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '497856a8d997f640b4a516062f84228a772a48a8',
+    ),
+    'psr/cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
     ),
     'psr/http-client' => 
     array (
@@ -126,6 +180,22 @@ private static $installed = array (
       'provided' => 
       array (
         0 => '1.0',
+      ),
+    ),
+    'psr/log' => 
+    array (
+      'pretty_version' => '1.1.3',
+      'version' => '1.1.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '0f73288fd15629204f9d42b7055f72dacbe811fc',
+    ),
+    'psr/log-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0.0',
       ),
     ),
     'ralouphie/getallheaders' => 

@@ -1,13 +1,22 @@
 <?php
 
+session_start();
+
 use League\OAuth2\Client\Provider\Google;
 
 require __DIR__ . '/../vendor/autoload.php';
 
+
+
+$clientID = "351761789625-7jpfoh99kiaguejb1fbv68088cb8qcvj.apps.googleusercontent.com";
+$clientSecret = "ZEbg1UdXEwCLCWM1nWS89M--";
+
+$token = "";
+
 $provider = new Google([
-    'clientId' => '498898000079-hmjm8tp2pup8mp88998dq0trv8goc866.apps.googleusercontent.com',
-    'clientSecret' => '9_hirnjhSYZwkG9dSwxX7FJr',
-    'redirectUri' => 'http://fschirmer.info/spacegame/public/index.php',
+    'clientId' => $clientID,
+    'clientSecret' => $clientSecret,
+    'redirectUri' => 'http://fschirmer.info/spacegame/public/login.php',
     'hostedDomain' => 'fschirmer.info', // optional; used to restrict access to users on your G Suite/Google Apps for Business accounts
 ]);
 
@@ -21,6 +30,7 @@ if (!empty($_GET['error'])) {
     // If we don't have an authorization code then get one
     $authUrl = $provider->getAuthorizationUrl();
     $_SESSION['oauth2state'] = $provider->getState();
+    //$_SESSION['access_token'] = $provider->getAccessToken();
     header('Location: ' . $authUrl);
     exit;
 
@@ -53,6 +63,11 @@ if (!empty($_GET['error'])) {
 
     }
 
+
+    //DEBUG
+    console_log($token);
+    $_SESSION["token"] = $token;
+
     // Use this to interact with an API on the users behalf
     echo $token->getToken();
 
@@ -63,5 +78,12 @@ if (!empty($_GET['error'])) {
     echo $token->getExpires();
 }
 
-
+function console_log($output, $with_script_tags = true) {
+    $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+        ');';
+    if ($with_script_tags) {
+        $js_code = '<script>' . $js_code . '</script>';
+    }
+    echo $js_code;
+}
 
