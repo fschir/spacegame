@@ -11,7 +11,8 @@ class planet
 
     function create()
     {
-        $this->pName = "Planet-".random_int(1,9999);
+        $string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $this->pName = "Planet-".random_int(1,9999).$string[mt_rand(0, strlen($string) - 1)];;
         $this->besitzer = "";
         $this->abwehrkraft = random_int(1000,9000);
         $this->abbaurateMineralien = random_int(1,10);
@@ -29,6 +30,7 @@ class planet
         var_dump($this->abbaurateEnergie);
         echo "<Br>";
         var_dump($this->abbaurateMineralien);
+        $this->besetzt();
     }
     function besetzt()
     {
@@ -55,8 +57,23 @@ class planet
         echo "Schaden von ".$var." an allen Gebäuden";
         echo "<br>";
     }
-    function applyBoni($boni){
-
+    function sql($SystemID){
+        $bes = $this->besetzt();
+        include_once ("../src/sql.php");
+        if($SystemID != 0) {
+            $sql_insert = "Insert Into Planeten (Planetentyp,Eigenschaften,Resourcenabbaurate,IstBesetztVon,Abwehrkraft,SystemID) 
+            Values ('$this->pName','','$this->abbaurateMineralien','$bes','$this->abwehrkraft','$SystemID')";
+            if (isset($conn)) {
+                if ($conn->query($sql_insert) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: " . $sql_insert . "<br>" . $conn->error;
+                }
+            }
+        }
     }
-
 }
+$new = new planet();
+$new->create();
+$new->sql(2);
+
