@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'bbe3e3695fa3ea4aaf7f1cbc6c257a012aded369',
+    'reference' => '06a65a0f6aca69b8affb41d1265529f44c0404f1',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'bbe3e3695fa3ea4aaf7f1cbc6c257a012aded369',
+      'reference' => '06a65a0f6aca69b8affb41d1265529f44c0404f1',
     ),
     'firebase/php-jwt' => 
     array (
@@ -109,6 +109,15 @@
       array (
       ),
       'reference' => 'bee7f0dc9c3e0b69a6039697533dca1e845c8c24',
+    ),
+    'openid/php-openid' => 
+    array (
+      'pretty_version' => '3.0.3',
+      'version' => '3.0.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd3e589c7575e4cb4498dc95a4cdaa35c2ad240e5',
     ),
     'paragonie/random_compat' => 
     array (

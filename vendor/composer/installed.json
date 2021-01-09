@@ -690,6 +690,62 @@
             "install-path": "../monolog/monolog"
         },
         {
+            "name": "openid/php-openid",
+            "version": "3.0.3",
+            "version_normalized": "3.0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/openid/php-openid.git",
+                "reference": "d3e589c7575e4cb4498dc95a4cdaa35c2ad240e5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/openid/php-openid/zipball/d3e589c7575e4cb4498dc95a4cdaa35c2ad240e5",
+                "reference": "d3e589c7575e4cb4498dc95a4cdaa35c2ad240e5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-dom": "*",
+                "ext-gmp": "*",
+                "php": ">=5.6"
+            },
+            "time": "2020-11-20T17:46:41+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "classmap": [
+                    "Auth"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "."
+            ],
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "JanRain Inc.",
+                    "homepage": "http://www.openidenabled.com"
+                }
+            ],
+            "description": "OpenID library for PHP5",
+            "homepage": "http://github.com/openid/php-openid",
+            "keywords": [
+                "Authentication",
+                "OpenId",
+                "auth",
+                "yadis"
+            ],
+            "support": {
+                "issues": "https://github.com/openid/php-openid/issues",
+                "source": "https://github.com/openid/php-openid/tree/3.0.3"
+            },
+            "install-path": "../openid/php-openid"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v9.99.100",
             "version_normalized": "9.99.100.0",

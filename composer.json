@@ -4,9 +4,12 @@
     "league/oauth2-google": "^2.0",
     "ext-mysqli": "*",
     "google/apiclient":"^2.7",
-    "openid/php-openid": "3.0.3"
+    "openid/php-openid": "3.0.3",
+    "ext-xsl": "*",
+    "ext-pdo": "*"
   },
   "scripts": {
     "post-update-cmd": "Google\\Task\\Composer::cleanup"
   }
 }
+
