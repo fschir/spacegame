@@ -23,19 +23,9 @@ class Flotte
         $this->y = $y1;
         $this->z = $z1;
     }
-    function upgradeChange(bool $state){
-        $this->upgradeable = $state;
-        var_dump( $this->upgradeable);
-    }
-    function upgrade($fn)
-    {
+    function upgradeChange(int $state,$fn){
         include("../src/sql.php");
-        $sql_select = "SELECT Upgrade FROM Flotte WHERE Flottenname ='$fn'";
-        if (isset($conn)) {
-            $result = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
-            if ($result[0][0]) {
-                $insert = Random_int(100, 200);
-                $sql_update = "UPDATE Flotte SET Staerke = '$insert'WHERE Flottenname = '$fn'";
+                $sql_update = "UPDATE Flotte SET Upgrade = '$state' WHERE Flottenname = '$fn'";
                 if (isset($conn)) {
                     if ($conn->query($sql_update) === TRUE) {
                     } else {
@@ -43,6 +33,20 @@ class Flotte
                     }
 
                 }
+            }
+    function upgrade($fn)
+    {
+        include("../src/sql.php");
+        $sql_select = "SELECT Upgrade FROM Flotte WHERE Flottenname ='$fn'";
+        if (isset($conn)) {
+            $result = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
+            if ($result[0][0]) {
+                $insert = Random_int(100, 1000);
+                $sql_update = "UPDATE Flotte SET Staerke = '$insert'WHERE Flottenname = '$fn'";
+                    if ($conn->query($sql_update) === TRUE) {
+                    } else {
+                        echo "Error: " . $sql_update . "<br>" . $conn->error;
+                    }
             }
         }
     }
@@ -68,7 +72,6 @@ class Flotte
             }
         }
     }
-
     function sqltest($StaatID){
         include("../src/sql.php");
         if($StaatID != 0) {
@@ -76,7 +79,6 @@ class Flotte
             Values ('$this->Flottenname','$this->Stärke','$this->upgradeable','$this->HP','$this->BestehtAus','$this->x','$this->y','$this->z','$StaatID')";
             if (isset($conn)) {
                 if ($conn->query($sql_insert) === TRUE) {
-                    echo "New record created successfully";
                 } else {
                     echo "Error: " . $sql_insert . "<br>" . $conn->error;
                 }
@@ -84,10 +86,6 @@ class Flotte
         }
     }
 }
-$test = new Flotte();
-$test->upgrade("Uebermacht");
-$test->Reise(1,1,1,"Uebermacht");
-
 /*
 $test = new Flotte();
 $test->Create("Uebermacht",20,20,20);

@@ -41,34 +41,38 @@ class planet
             return $this->besitzer;
         }
     }
-    function verteidigen($angriff)
+    function verteidigen($attackFlotte,$defend)
     {
-        if ($this->abwehrkraft<$angriff) {
-            return "Success";
-        } else {
-            $this->gebaeudeSchaden($this->abwehrkraft-$angriff);
-            return $this->abwehrkraft-$angriff;
-        }
+            include("../src/sql.php");
+            $sql_select = "SELECT Staerke FROM Flotte WHERE Flottenname ='$attackFlotte'";
+            if (isset($conn)) {
+                $atk = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
+
+                $sql_select = "SELECT Abwehrkraft FROM Planeten WHERE PlanetenID  ='$defend'";
+                    $def = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
+
+                    if ($def[0][0] > $atk[0][0]) {
+                        return "Successful Defense";
+                    } else {
+                        return "Successful Attack";
+                    }
+                }
+
     }
     function gebaeudeSchaden($diff){
         $var = "";
         //gebäudeliste
         $var = $diff / random_int(1,2);
-        echo "<br>";
         echo "Schaden von ".$var." an allen Gebäuden";
-        echo "<br>";
     }
     function sql($SystemID){
-        echo $SystemID;
         $bes = $this->besetzt();
         include("../src/sql.php");
         if($SystemID != 0) {
-            echo "SQL";
             $sql_insert = "Insert Into Planeten (Planetentyp,Resourcenabbaurate,IstBesetztVon,Abwehrkraft,SystemID) 
             Values ('$this->pName','$this->abbaurateMineralien','$bes','$this->abwehrkraft','$SystemID')";
             if (isset($conn)) {
                 if ($conn->query($sql_insert) === TRUE) {
-                    echo "New record created successfully";
                 } else {
                     echo "Error: " . $sql_insert . "<br>" . $conn->error;
                 }

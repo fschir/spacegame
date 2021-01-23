@@ -24,7 +24,6 @@ class Staat
             $sql_insert = "INSERT INTO STAAT (Name,Anfuehrer,UserID,Spezie) VALUES ('$this->Name','$this->Anführer','$userid','$this->Spezie')";
             if (isset($conn)) {
                 if ($conn->query($sql_insert) === TRUE) {
-                    echo "New record created successfully";
                 } else {
                     echo "Error: " . $sql_insert . "<br>" . $conn->error;
                 }

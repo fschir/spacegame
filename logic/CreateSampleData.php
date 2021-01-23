@@ -17,9 +17,13 @@ $new->planets(1);
 
 $test = new Flotte();
 $test->Create("Uebermacht",20,20,20);
-$test->upgrade(false);
+$test->upgradeChange(1,"Uebermacht");
+$test->upgrade("Uebermacht");
 $test->sqltest(1);
 $test->Reise(10,10,10,"Uebermacht");
+
+$test = new planet();
+$test->verteidigen("Uebermacht",3);
 
 $test = new gebäude();
 $test->create("mine");

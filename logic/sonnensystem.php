@@ -19,10 +19,6 @@ class sonnensystem
         for ($i = 0; $i < $this->PlanetenAnzahl; $i++) {
             $this->test = new planet;
             $this->test->create($SystemID);
-            echo $this->test->verteidigen(1000);
-            echo "<br>";
-            echo $this->test->besetzt();
-            echo "<br>";
         }
     }
 
@@ -39,8 +35,6 @@ class sonnensystem
                 $sql_insert = "INSERT INTO Sonnensystem (MaxPlaneten,StandpunktX,StandpunktY,StandpunktZ,StaatID) VALUES ('$this->PlanetenAnzahl','$this->x','$this->y','$this->z','$SystemID')";
                 if (isset($conn)) {
                     if ($conn->query($sql_insert) === TRUE) {
-
-                        echo "New record created successfully";
                     } else {
                         echo "Error: " . $sql_insert . "<br>" . $conn->error;
                     }
