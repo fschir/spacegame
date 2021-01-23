@@ -19,7 +19,7 @@ class Staat
 
     }
     function sql($userid){
-        include_once ("../src/sql.php");
+        include("../src/sql.php");
         if($userid != 0) {
             $sql_insert = "INSERT INTO STAAT (Name,Anfuehrer,UserID,Spezie) VALUES ('$this->Name','$this->Anführer','$userid','$this->Spezie')";
             if (isset($conn)) {
@@ -31,7 +31,7 @@ class Staat
             }
         }
     }
-}
+}/*
 $test = new Staat();
 $test->create("MoinMeista","Stalin","Russe");
-$test->sql("1338");
+$test->sql("1338");*/

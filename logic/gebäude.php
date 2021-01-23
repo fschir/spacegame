@@ -37,7 +37,7 @@ class gebäude
         return $this->ART;
     }
     function sql($PlanetenID){
-        include_once ("../src/sql.php");
+        include("../src/sql.php");
         if($PlanetenID != 0) {
             $sql_insert = "INSERT INTO Gebaeude (HP,Bewohner,Nutzen,Produktion) VALUES ('$this->HP','$this->MAX_BEWOHNER','$this->ART','$this->PRODUKTION')";
             if (isset($conn)) {
@@ -64,6 +64,7 @@ class gebäude
         }
 
 }
+/*
 $test = new gebäude();
 $test->create("mine");
-$test->sql(2);
+$test->sql(2);*/
