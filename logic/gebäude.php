@@ -23,13 +23,11 @@ class gebäude
     {
         $this->PRODUKTION = random_int(10, 100);
         $this->HP = 250;
-        var_dump($this->HP, $this->PRODUKTION);
     }
 
     function c_werft()
     {
         $this->HP = 1000;
-        var_dump($this->HP);
     }
 
     function getART()
@@ -42,7 +40,6 @@ class gebäude
             $sql_insert = "INSERT INTO Gebaeude (HP,Bewohner,Nutzen,Produktion) VALUES ('$this->HP','$this->MAX_BEWOHNER','$this->ART','$this->PRODUKTION')";
             if (isset($conn)) {
                 if ($conn->query($sql_insert) === TRUE) {
-                    echo "New record created successfully";
                 } else {
                     echo "Error: " . $sql_insert . "<br>" . $conn->error;
                 }
@@ -56,7 +53,6 @@ class gebäude
             $sql_insert = "INSERT INTO PlanetenGebaeude (PlanetenID,GebaeudeID) VALUES ('$PlanetenID','$result')";
             if (isset($conn)) {
                 if ($conn->query($sql_insert) === TRUE) {
-                    echo "New record created successfully";
                 } else {
                     echo "Error: " . $sql_insert . "<br>" . $conn->error;
                 }
