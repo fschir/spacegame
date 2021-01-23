@@ -9,7 +9,7 @@ class planet
     private int $abbaurateLegierungen;
     private int $abbaurateNahrung;
 
-    function create()
+    function create($SystemID)
     {
         $string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $this->pName = "Planet-".random_int(1,9999).$string[mt_rand(0, strlen($string) - 1)];;
@@ -19,7 +19,7 @@ class planet
         $this->abbaurateEnergie = random_int(1,10);
         $this->abbaurateLegierungen = random_int(1,10);
         $this->abbaurateNahrung = random_int(1,10);
-        echo $this->pName;
+        /*echo $this->pName;
         echo "<Br>";
         var_dump($this->abwehrkraft);
         echo "<Br>";
@@ -29,8 +29,9 @@ class planet
         echo "<Br>";
         var_dump($this->abbaurateEnergie);
         echo "<Br>";
-        var_dump($this->abbaurateMineralien);
+        var_dump($this->abbaurateMineralien);*/
         $this->besetzt();
+        $this->sql($SystemID);
     }
     function besetzt()
     {
@@ -58,11 +59,13 @@ class planet
         echo "<br>";
     }
     function sql($SystemID){
+        echo $SystemID;
         $bes = $this->besetzt();
-        include_once ("../src/sql.php");
+        include("../src/sql.php");
         if($SystemID != 0) {
-            $sql_insert = "Insert Into Planeten (Planetentyp,Eigenschaften,Resourcenabbaurate,IstBesetztVon,Abwehrkraft,SystemID) 
-            Values ('$this->pName','','$this->abbaurateMineralien','$bes','$this->abwehrkraft','$SystemID')";
+            echo "SQL";
+            $sql_insert = "Insert Into Planeten (Planetentyp,Resourcenabbaurate,IstBesetztVon,Abwehrkraft,SystemID) 
+            Values ('$this->pName','$this->abbaurateMineralien','$bes','$this->abwehrkraft','$SystemID')";
             if (isset($conn)) {
                 if ($conn->query($sql_insert) === TRUE) {
                     echo "New record created successfully";
@@ -73,7 +76,4 @@ class planet
         }
     }
 }
-$new = new planet();
-$new->create();
-$new->sql(2);
 
