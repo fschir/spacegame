@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/local" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="Spielelogik + SQL_Selects + Sql_Inserts" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/master" />
+  </component>
+  <component name="Git.Pull.Settings">
+    <option name="BRANCH" value="master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="local" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/fschir/spacegame" />
+      </set>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectId" id="1jp3DEt7JmW8BGAvik3o4Adj0MB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="FirefoxRemoteDebugType" port="5999">
+      <method v="2" />
+    </configuration>
+    <configuration name="Start" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/public/index.php">
+      <CommandLine>
+        <PhpTestInterpreterSettings>
+          <option name="interpreterName" value="PHP" />
+        </PhpTestInterpreterSettings>
+      </CommandLine>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="" />
+      <created>1604487083480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604487083480</updated>
+      <workItem from="1604487084501" duration="91000" />
+      <workItem from="1604487176324" duration="8760000" />
+      <workItem from="1605019500283" duration="1428000" />
+      <workItem from="1605618558892" duration="75000" />
+      <workItem from="1606312740692" duration="6209000" />
+      <workItem from="1606320978903" duration="1018000" />
+      <workItem from="1606343027761" duration="1387000" />
+      <workItem from="1606346344859" duration="331000" />
+      <workItem from="1606835258309" duration="875000" />
+      <workItem from="1607160976546" duration="608000" />
+      <workItem from="1607421275041" duration="54000" />
+      <workItem from="1607520311286" duration="7594000" />
+      <workItem from="1608045526861" duration="44000" />
+      <workItem from="1608991648992" duration="2447000" />
+      <workItem from="1609074206266" duration="4431000" />
+      <workItem from="1610177978296" duration="2681000" />
+      <workItem from="1610285600224" duration="6053000" />
+      <workItem from="1610578895243" duration="161000" />
+      <workItem from="1610579385212" duration="35000" />
+      <workItem from="1610783821645" duration="6031000" />
+      <workItem from="1611396160587" duration="5839000" />
+    </task>
+    <task id="LOCAL-00001" summary="Spielelogik + SQL">
+      <created>1610178096273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610178096273</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Spielelogik + SQL_Selects + Sql_Inserts(few missing)">
+      <created>1611399350915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1611399350915</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Spielelogik + SQL_Selects + Sql_Inserts">
+      <created>1611401249160</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1611401249160</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/local" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Spielelogik + SQL" />
+    <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts(few missing)" />
+    <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spielelogik + SQL_Selects + Sql_Inserts" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="258" y="321" key="#CLI_Interpreters" timestamp="1604488734037">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="258" y="321" key="#CLI_Interpreters/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604488734037" />
+    <state x="987" y="347" key="#PHP" timestamp="1604487832171">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="987" y="347" key="#PHP/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487832171" />
+    <state x="1072" y="563" width="416" height="283" key="#Scopes" timestamp="1604487564783">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1072" y="563" width="416" height="283" key="#Scopes/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487564783" />
+    <state x="1207" y="440" key="#Web_Browsers" timestamp="1604487426342">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1207" y="440" key="#Web_Browsers/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487426342" />
+    <state x="864" y="305" width="1092" height="729" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604488734702">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="864" y="305" width="1092" height="729" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604488734702" />
+    <state x="913" y="100" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607522355034">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="913" y="100" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607522355034" />
+    <state x="248" y="122" width="2048" height="1156" key="DiffContextDialog" timestamp="1606313221109">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="248" y="122" width="2048" height="1156" key="DiffContextDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606313221109" />
+    <state x="248" y="122" key="DiffContextDialog/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604496666039" />
+    <state x="1190" y="392" key="FileChooserDialogImpl" timestamp="1608045548092">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1190" y="392" key="FileChooserDialogImpl/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1608045548092" />
+    <state x="1190" y="392" key="FileChooserDialogImpl/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487792950" />
+    <state width="1257" height="347" key="GridCell.Tab.0.bottom" timestamp="1611403428121">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1607524742767">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607524742767" />
+    <state width="1257" height="347" key="GridCell.Tab.0.bottom/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611403428121" />
+    <state width="1815" height="253" key="GridCell.Tab.0.bottom/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607536468491" />
+    <state width="2517" height="607" key="GridCell.Tab.0.bottom/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604498907698" />
+    <state width="1257" height="347" key="GridCell.Tab.0.center" timestamp="1611403428120">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1607524742766">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.center.inPresentationMode/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607524742766" />
+    <state width="1257" height="347" key="GridCell.Tab.0.center/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611403428120" />
+    <state width="1815" height="253" key="GridCell.Tab.0.center/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607536468489" />
+    <state width="2517" height="607" key="GridCell.Tab.0.center/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604498907698" />
+    <state width="1257" height="347" key="GridCell.Tab.0.left" timestamp="1611403428120">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1607524742766">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.left.inPresentationMode/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607524742766" />
+    <state width="1257" height="347" key="GridCell.Tab.0.left/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611403428120" />
+    <state width="1815" height="253" key="GridCell.Tab.0.left/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607536468488" />
+    <state width="2517" height="607" key="GridCell.Tab.0.left/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604498907698" />
+    <state width="1257" height="347" key="GridCell.Tab.0.right" timestamp="1611403428120">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1607524742767">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="253" key="GridCell.Tab.0.right.inPresentationMode/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607524742767" />
+    <state width="1257" height="347" key="GridCell.Tab.0.right/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611403428120" />
+    <state width="1815" height="253" key="GridCell.Tab.0.right/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607536468491" />
+    <state width="2517" height="607" key="GridCell.Tab.0.right/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604498907698" />
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom" timestamp="1606320903643">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.bottom/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606320903643" />
+    <state width="2517" height="496" key="GridCell.Tab.1.center" timestamp="1606320903643">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.center/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606320903643" />
+    <state width="2517" height="496" key="GridCell.Tab.1.left" timestamp="1606320903642">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.left/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606320903642" />
+    <state width="2517" height="496" key="GridCell.Tab.1.right" timestamp="1606320903643">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state width="2517" height="496" key="GridCell.Tab.1.right/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606320903643" />
+    <state x="1103" y="427" key="NewPhpClassDialog" timestamp="1607523300565">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1103" y="427" key="NewPhpClassDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607523300565" />
+    <state x="1114" y="628" key="NewPhpFileDialog" timestamp="1606317175710">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1114" y="628" key="NewPhpFileDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317175710" />
+    <state x="1378" y="372" key="SettingsEditor" timestamp="1606317800816">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317800816" />
+    <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497741595" />
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1611401253814">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611401253814" />
+    <state x="3193" y="695" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607527413141" />
+    <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610288089698">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1610288089698" />
+    <state x="1069" y="417" key="git4idea.branch.GitSmartOperationDialog" timestamp="1606312920861">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="1069" y="417" key="git4idea.branch.GitSmartOperationDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606312920861" />
+    <state x="936" y="333" key="run.anything.popup" timestamp="1610787855183">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="936" y="333" key="run.anything.popup/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1610787855183" />
+    <state x="936" y="333" key="run.anything.popup/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487567604" />
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1604497731388">
+      <screen x="0" y="0" width="2560" height="1410" />
+    </state>
+    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497731388" />
+  </component>
+</project>
