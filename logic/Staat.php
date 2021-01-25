@@ -1,36 +1,40 @@
 <?php
 
+include("../src/sql.php");
 
-class Staat
+class Staat_c
 {
-    private string $Name;
-    private string $Anführer;
-    private string $Spezie;
-    private bool $IstImKrieg;
-    private $verbuendete;
-    private bool $TerraForm;
+    private int $staatID;
+    private string $staatsname;
+    private string $anfuehrer;
+    private string $spezies;
+    var $planeten = array();
 
-    function create($n,$a,$s){
-        $this->Name = $n;
-        $this->Anführer = $a;
-        $this->Spezie = $s;
+    public function getStaatsname(){
+        return $this->staatsname;
     }
-    function spezies ($sp){ //Legt Attribut Terraform fest
 
-    }
-    function sql($userid){
-        include("../src/sql.php");
-        if($userid != 0) {
-            $sql_insert = "INSERT INTO STAAT (Name,Anfuehrer,UserID,Spezie) VALUES ('$this->Name','$this->Anführer','$userid','$this->Spezie')";
-            if (isset($conn)) {
-                if ($conn->query($sql_insert) === TRUE) {
-                } else {
-                    echo "Error: " . $sql_insert . "<br>" . $conn->error;
-                }
+    public function __construct($UserID)
+    {
+        $querydb = <<<EOT
+            SELECT StaatID, Name, Anfuehrer, Spezie
+            FROM STAAT
+            WHERE UserID = $UserID
+        EOT;
+
+        if (isset($_SESSION["Mysql"])) {
+            echo "conn set";
+            if ($_SESSION["Mysql"]->query($querydb) == TRUE) {
+                $results = $_SESSION["Mysql"]->query($querydb)->fetch_all();
+                $this->staatID = $results[0][0];
+                $this->staatsname = $results[0][1];
+                $this->anfuehrer = $results[0][2];
+                $this->spezies = $results[0][3];
             }
         }
+        else {
+            echo "<b>CONN NOT SET</b><br>";
+        }
     }
-}/*
-$test = new Staat();
-$test->create("MoinMeista","Stalin","Russe");
-$test->sql("1338");*/
+}
+

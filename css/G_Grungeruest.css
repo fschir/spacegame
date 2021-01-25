@@ -1,7 +1,10 @@
+
+
 body {
     padding: 0;
     margin: 0;
     background: #f9f9f9;
+    background-color: coral;
 }
 /*-- Navigationsleiste --*/
 .navbar {
@@ -25,7 +28,8 @@ body {
 }
 .Inhalt_main {
     left: 50%;
-    position: absolute;
+    position: relative;
+    margin-top: 2rem;
     top: 40%;
     transform: translate(-50%, -55%);
     text-align: center;

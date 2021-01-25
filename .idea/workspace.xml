@@ -22,28 +22,19 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/local" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="PHP Class's To Files FIXED">
-      <change afterPath="$PROJECT_DIR$/logic.zip" afterDir="false" />
+    <list default="true" id="5852e152-e518-4555-aa56-b42d020aebc8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/local'">
+      <change afterPath="$PROJECT_DIR$/logic/Spieler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UEBUNGEN/FlorianSchirmer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UEBUNGEN/ManfredMeyer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UEBUNGEN/css/lebenslauf.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UEBUNGEN/css/lebenslauf2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UEBUNGEN/img/Wallenstein_Reiterbild.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UEBUNGEN/img/flagge.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/CreateSampleData.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/CreateSampleData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Flotte.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Flotte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/G_Grungeruest.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/G_Grungeruest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/G_Grundgeruest.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/Staat.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Staat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/gebäude.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/gebäude.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/planet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/sonnensystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/sonnensystem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,9 +73,30 @@
       </set>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-client" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/league/oauth2-google" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/vendor/openid/php-openid" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1jp3DEt7JmW8BGAvik3o4Adj0MB" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -101,10 +113,19 @@
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../sgnew/sg" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="FirefoxRemoteDebugType" port="5999">
       <method v="2" />
     </configuration>
@@ -162,7 +183,7 @@
       <workItem from="1611396160587" duration="5839000" />
       <workItem from="1611509520584" duration="205000" />
       <workItem from="1611511711518" duration="434000" />
-      <workItem from="1611590499334" duration="7009000" />
+      <workItem from="1611590499334" duration="2359000" />
     </task>
     <task id="LOCAL-00001" summary="Spielelogik + SQL">
       <created>1610178096273</created>
@@ -192,12 +213,12 @@
       <option name="project" value="LOCAL" />
       <updated>1611509712245</updated>
     </task>
-    <task id="LOCAL-00005" summary="PHP Class's To Files FIXED">
-      <created>1611594016689</created>
+    <task id="LOCAL-00005" summary="Merge remote-tracking branch 'origin/local'">
+      <created>1611595462792</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1611594016689</updated>
+      <updated>1611595462792</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
@@ -216,7 +237,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/local" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -235,8 +256,8 @@
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts(few missing)" />
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts" />
     <MESSAGE value="Max HTML+CSS" />
-    <MESSAGE value="PHP Class's To Files FIXED" />
-    <option name="LAST_COMMIT_MESSAGE" value="PHP Class's To Files FIXED" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/local'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/local'" />
   </component>
   <component name="WindowStateProjectService">
     <state x="258" y="321" key="#CLI_Interpreters" timestamp="1604488734037">
@@ -259,6 +280,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="864" y="305" width="1092" height="729" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604488734702" />
+    <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser" timestamp="1611596867501">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="753" y="234" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611596867501" />
     <state x="913" y="100" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1607522355034">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -329,9 +354,10 @@
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state width="2517" height="496" key="GridCell.Tab.1.right/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606320903643" />
-    <state x="1103" y="427" key="NewPhpClassDialog" timestamp="1607523300565">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="827" y="318" key="NewPhpClassDialog" timestamp="1611595664552">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="827" y="318" key="NewPhpClassDialog/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611595664552" />
     <state x="1103" y="427" key="NewPhpClassDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607523300565" />
     <state x="1114" y="628" key="NewPhpFileDialog" timestamp="1606317175710">
       <screen x="0" y="0" width="2560" height="1410" />
@@ -342,15 +368,21 @@
     </state>
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317800816" />
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497741595" />
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1611594024102">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="654" y="325" key="Vcs.Push.Dialog.v2" timestamp="1611595468419">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611594024102" />
+    <state x="654" y="325" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611595468419" />
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611509717600" />
     <state x="3193" y="695" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607527413141" />
-    <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610288089698">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="823" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611598738786">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="823" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611598738786" />
     <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1610288089698" />
+    <state x="-1499" y="0" width="729" height="872" maximized="true" key="dock-window-1" timestamp="1611603399505">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1499" y="0" width="729" height="872" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611603399505" />
     <state x="1069" y="417" key="git4idea.branch.GitSmartOperationDialog" timestamp="1606312920861">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
@@ -360,9 +392,10 @@
     </state>
     <state x="936" y="333" key="run.anything.popup/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1610787855183" />
     <state x="936" y="333" key="run.anything.popup/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487567604" />
-    <state x="943" y="317" width="672" height="678" key="search.everywhere.popup" timestamp="1604497731388">
-      <screen x="0" y="0" width="2560" height="1410" />
+    <state x="707" y="236" width="672" height="505" key="search.everywhere.popup" timestamp="1611603017443">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="707" y="236" width="672" height="505" key="search.everywhere.popup/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611603017443" />
     <state x="943" y="317" width="672" height="678" key="search.everywhere.popup/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497731388" />
   </component>
 </project>
