@@ -66,12 +66,11 @@ class Spieler
         $this->gold = $gold;
         $this->energie = $energie;
         $this->userid = $userid;
-        echo "Spieler __construct <br>";
         $this->staat = new Staat_c($this->getUserID());
         #var_dump($this);
     }
 
-    public function initStaat(){
+    public function initStaat() : Staat_c{
         if(isset($this->user_id)) {
             return new Staat_c($this->getUserID());
         }
