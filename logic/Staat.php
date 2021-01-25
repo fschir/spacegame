@@ -1,26 +1,36 @@
 <?php
-function Staatcreate($userid,$n,$a,$s){
-    $Name = $n;
-    $Anfuehrer = $a;
-    $Spezie = $s;
-    sqlStaat($userid,$Name,$Anfuehrer,$Spezie);
-}
-function Staatspezies ($sp){ //Legt Attribut Terraform fest
 
-}
-function sqlStaat($userid,$Name,$Anfuehrer,$Spezie){
-    include("../src/sql.php");
-    if($userid != 0) {
-        $sql_insert = "INSERT INTO STAAT (Name,Anfuehrer,UserID,Spezie) VALUES ('$Name','$Anfuehrer','$userid','$Spezie')";
-        if (isset($conn)) {
-            if ($conn->query($sql_insert) === TRUE) {
-            } else {
-                echo "Error: " . $sql_insert . "<br>" . $conn->error;
+
+class Staat
+{
+    private string $Name;
+    private string $Anführer;
+    private string $Spezie;
+    private bool $IstImKrieg;
+    private $verbuendete;
+    private bool $TerraForm;
+
+    function create($n,$a,$s){
+        $this->Name = $n;
+        $this->Anführer = $a;
+        $this->Spezie = $s;
+    }
+    function spezies ($sp){ //Legt Attribut Terraform fest
+
+    }
+    function sql($userid){
+        include("../src/sql.php");
+        if($userid != 0) {
+            $sql_insert = "INSERT INTO STAAT (Name,Anfuehrer,UserID,Spezie) VALUES ('$this->Name','$this->Anführer','$userid','$this->Spezie')";
+            if (isset($conn)) {
+                if ($conn->query($sql_insert) === TRUE) {
+                } else {
+                    echo "Error: " . $sql_insert . "<br>" . $conn->error;
+                }
             }
         }
     }
-}
-/*
+}/*
 $test = new Staat();
 $test->create("MoinMeista","Stalin","Russe");
 $test->sql("1338");*/

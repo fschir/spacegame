@@ -6,15 +6,25 @@ include_once("sonnensystem.php");
 include_once("Staat.php");
 
 
-Staatcreate(1338,"MoinMeista","Stalin","Russe");
+$test = new Staat();
+$test->create("MoinMeista","Stalin","Russe");
+$test->sql("1337");
 
-CreateSystem(1);
+$new = new sonnensystem();
+$new->CreateSystem();
+$new->sql(1);
+$new->planets(1);
 
-CreateFlotte(1,"Uebermacht",true,20,20,20);
-FlotteupgradeChange(1,"Uebermacht");
-Flotteupgrade("Uebermacht");
-FlotteReise(10,10,10,"Uebermacht");
+$test = new Flotte();
+$test->Create("Uebermacht",20,20,20);
+$test->upgradeChange(1,"Uebermacht");
+$test->upgrade("Uebermacht");
+$test->sqltest(1);
+$test->Reise(10,10,10,"Uebermacht");
 
-Planetverteidigen("Uebermacht",3);
+$test = new planet();
+$test->verteidigen("Uebermacht",3);
 
-createGebaeude("mine",1);
+$test = new gebäude();
+$test->create("mine");
+$test->sql(1);

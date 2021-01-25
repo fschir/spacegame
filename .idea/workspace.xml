@@ -29,8 +29,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="Max HTML+CSS">
+    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="PHP Class's To Files FIXED">
+      <change afterPath="$PROJECT_DIR$/logic.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UEBUNGEN/FlorianSchirmer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UEBUNGEN/ManfredMeyer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UEBUNGEN/css/lebenslauf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UEBUNGEN/css/lebenslauf2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UEBUNGEN/img/Wallenstein_Reiterbild.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UEBUNGEN/img/flagge.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/CreateSampleData.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/CreateSampleData.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/Flotte.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Flotte.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/Staat.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Staat.php" afterDir="false" />
@@ -155,7 +162,7 @@
       <workItem from="1611396160587" duration="5839000" />
       <workItem from="1611509520584" duration="205000" />
       <workItem from="1611511711518" duration="434000" />
-      <workItem from="1611590499334" duration="2359000" />
+      <workItem from="1611590499334" duration="7009000" />
     </task>
     <task id="LOCAL-00001" summary="Spielelogik + SQL">
       <created>1610178096273</created>
@@ -185,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611509712245</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="PHP Class's To Files FIXED">
+      <created>1611594016689</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1611594016689</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +235,8 @@
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts(few missing)" />
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts" />
     <MESSAGE value="Max HTML+CSS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Max HTML+CSS" />
+    <MESSAGE value="PHP Class's To Files FIXED" />
+    <option name="LAST_COMMIT_MESSAGE" value="PHP Class's To Files FIXED" />
   </component>
   <component name="WindowStateProjectService">
     <state x="258" y="321" key="#CLI_Interpreters" timestamp="1604488734037">
@@ -327,10 +342,10 @@
     </state>
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317800816" />
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497741595" />
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1611509717600">
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1611594024102">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611509717600" />
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611594024102" />
     <state x="3193" y="695" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607527413141" />
     <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610288089698">
       <screen x="0" y="0" width="2560" height="1410" />
