@@ -1,74 +1,98 @@
 <?php
-function createPlanet($SystemID)
-{
-    $string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $pName = "Planet-".random_int(1,9999).$string[mt_rand(0, strlen($string) - 1)];;
-    $besitzer = "";
-    $abwehrkraft = random_int(1000,9000);
-    $abbaurateMineralien = random_int(1,10);
-    $abbaurateEnergie = random_int(1,10);
-    $abbaurateLegierungen = random_int(1,10);
-    $abbaurateNahrung = random_int(1,10);
-    /*echo $this->pName;
-    echo "<Br>";
-    var_dump($this->abwehrkraft);
-    echo "<Br>";
-    var_dump($this->abbaurateNahrung);
-    echo "<Br>";
-    var_dump($this->abbaurateLegierungen);
-    echo "<Br>";
-    var_dump($this->abbaurateEnergie);
-    echo "<Br>";
-    var_dump($this->abbaurateMineralien);*/
-    sqlPlanet($SystemID,$pName,$abbaurateMineralien,$abwehrkraft);
-}
-function Planetbesetzt($ID)
-{
-    include("../src/sql.php");
-    $sql_select = "SELECT IstBesetztVon FROM Planeten WHERE PlanetenID ='$ID'";
-    if (isset($conn)) {
-        $besitzer = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
-        if($ID = NULL){
-            return "free";
-        }else{
-            return $besitzer[0][0];
-        }
+
+class planet{
+
+    private String $planet_name;
+    private int $max_count_buildings;
+    private int $curr_count_buildings;
+    private int $planet_id;
+
+    /**
+     * @return String
+     */
+    public function getPlanetName(): string
+    {
+        return $this->planet_name;
     }
 
-}
-function Planetverteidigen($attackFlotte,$defend)
-{
-    include("../src/sql.php");
-    $sql_select = "SELECT Staerke FROM Flotte WHERE Flottenname ='$attackFlotte'";
-    if (isset($conn)) {
-        $atk = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
-
-        $sql_select = "SELECT Abwehrkraft FROM Planeten WHERE PlanetenID  ='$defend'";
-        $def = $conn->query($sql_select, MYSQLI_STORE_RESULT)->fetch_all();
-
-        if ($def[0][0] > $atk[0][0]) {
-            return "Successful Defense";
-        } else {
-            return "Successful Attack";
-        }
+    /**
+     * @param String $planet_name
+     */
+    public function setPlanetName(string $planet_name): void
+    {
+        $this->planet_name = $planet_name;
     }
 
-}
-function PlanetgebaeudeSchaden($diff){
-    $var = "";
-    //gebäudeliste
-    $var = $diff / random_int(1,2);
-    echo "Schaden von ".$var." an allen Gebäuden";
-}
-function sqlPlanet($SystemID,$pName,$abbaurateMineralien,$abwehrkraft){
-    include("../src/sql.php");
-    if($SystemID != 0) {
-        $sql_insert = "Insert Into Planeten (Planetentyp,Resourcenabbaurate,Abwehrkraft,SystemID) 
-            Values ('$pName','$abbaurateMineralien','$abwehrkraft','$SystemID')";
-        if (isset($conn)) {
-            if ($conn->query($sql_insert) === TRUE) {
-            } else {
-                echo "Error: " . $sql_insert . "<br>" . $conn->error;
+    /**
+     * @return int
+     */
+    public function getMaxCountBuildings(): int
+    {
+        return $this->max_count_buildings;
+    }
+
+    /**
+     * @param int $max_count_buildings
+     */
+    public function setMaxCountBuildings(int $max_count_buildings): void
+    {
+        $this->max_count_buildings = $max_count_buildings;
+    }
+
+    /**
+     * @return int
+     */
+    public function getCurrCountBuildings(): int
+    {
+        return $this->curr_count_buildings;
+    }
+
+    /**
+     * @param int $curr_count_buildings
+     */
+    public function setCurrCountBuildings(int $curr_count_buildings): void
+    {
+        $this->curr_count_buildings = $curr_count_buildings;
+    }
+
+    /**
+     * @return int
+     */
+    public function getPlanetId(): int
+    {
+        return $this->planet_id;
+    }
+
+    /**
+     * @param int $planet_id
+     */
+    public function setPlanetId(int $planet_id): void
+    {
+        $this->planet_id = $planet_id;
+    }
+
+
+
+    private bool $planet_exists;
+
+    public function __construct($planet_id, $planet_exists){
+        $this->planet_id = $planet_id;
+
+        if($planet_exists){
+            $querydb = <<<EOT
+            SELECT planet_id, planet_name, max_count_buildings, curr_count_buildings
+            FROM Planeten
+            WHERE planet_id = $planet_id
+        EOT;
+
+            if (isset($_SESSION["Mysql"])) {
+                $results = $_SESSION["Mysql"]->query($querydb)->fetch_all();
+                $this->planet_name = $results[0][1];
+                $this->max_count_buildings = $results[0][2];
+                $this->curr_count_buildings = $results[0][3];
+            }
+            else {
+                echo "<b>CONN NOT SET</b><br>";
             }
         }
     }
