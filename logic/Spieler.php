@@ -48,6 +48,7 @@ class Spieler
     private string $username;
     public function setMetall(int $menge){
         $this->metall = $menge;
+        $this->updateMetall($menge);
     }
     public function getUsername(){
         return $this->username;
