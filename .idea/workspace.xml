@@ -22,19 +22,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/local" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5852e152-e518-4555-aa56-b42d020aebc8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/local'">
-      <change afterPath="$PROJECT_DIR$/logic/Spieler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/G_Grungeruest.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/G_Grungeruest.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/G_Grundgeruest.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Staat.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Staat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.php" afterDir="false" />
+    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="PHP Class's To Objects">
+      <change beforePath="$PROJECT_DIR$/logic/Spieler.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Spieler.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,9 +119,6 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="FirefoxRemoteDebugType" port="5999">
       <method v="2" />
     </configuration>
@@ -374,11 +367,11 @@
     <state x="654" y="325" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611595468419" />
     <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611509717600" />
     <state x="3193" y="695" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607527413141" />
-    <state x="823" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611598738786">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611606218940">
+      <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="823" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611598738786" />
-    <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1610288089698" />
+    <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611606218940" />
     <state x="-1499" y="0" width="729" height="872" maximized="true" key="dock-window-1" timestamp="1611603399505">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
