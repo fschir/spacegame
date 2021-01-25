@@ -91,6 +91,9 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="FirefoxRemoteDebugType" port="5999">
       <method v="2" />
     </configuration>
