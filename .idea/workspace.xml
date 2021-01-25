@@ -29,7 +29,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="Spielelogik + SQL_Selects + Sql_Inserts" />
+    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="Max HTML+CSS">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/CreateSampleData.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/CreateSampleData.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/Flotte.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Flotte.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/Staat.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Staat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/gebäude.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/gebäude.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/planet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/sonnensystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/sonnensystem.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -83,7 +92,8 @@
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sgnew/sg" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -143,6 +153,9 @@
       <workItem from="1610579385212" duration="35000" />
       <workItem from="1610783821645" duration="6031000" />
       <workItem from="1611396160587" duration="5839000" />
+      <workItem from="1611509520584" duration="205000" />
+      <workItem from="1611511711518" duration="434000" />
+      <workItem from="1611590499334" duration="2359000" />
     </task>
     <task id="LOCAL-00001" summary="Spielelogik + SQL">
       <created>1610178096273</created>
@@ -165,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611401249160</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Max HTML+CSS">
+      <created>1611509712244</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1611509712245</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +220,8 @@
     <MESSAGE value="Spielelogik + SQL" />
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts(few missing)" />
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spielelogik + SQL_Selects + Sql_Inserts" />
+    <MESSAGE value="Max HTML+CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Max HTML+CSS" />
   </component>
   <component name="WindowStateProjectService">
     <state x="258" y="321" key="#CLI_Interpreters" timestamp="1604488734037">
@@ -232,10 +253,10 @@
     </state>
     <state x="248" y="122" width="2048" height="1156" key="DiffContextDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606313221109" />
     <state x="248" y="122" key="DiffContextDialog/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604496666039" />
-    <state x="1190" y="392" key="FileChooserDialogImpl" timestamp="1608045548092">
+    <state x="1190" y="392" key="FileChooserDialogImpl" timestamp="1611590532675">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="1190" y="392" key="FileChooserDialogImpl/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1608045548092" />
+    <state x="1190" y="392" key="FileChooserDialogImpl/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611590532675" />
     <state x="1190" y="392" key="FileChooserDialogImpl/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604487792950" />
     <state width="1257" height="347" key="GridCell.Tab.0.bottom" timestamp="1611403428121">
       <screen x="0" y="0" width="2560" height="1410" />
@@ -306,10 +327,10 @@
     </state>
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317800816" />
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497741595" />
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1611401253814">
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2" timestamp="1611509717600">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
-    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611401253814" />
+    <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611509717600" />
     <state x="3193" y="695" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607527413141" />
     <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610288089698">
       <screen x="0" y="0" width="2560" height="1410" />
