@@ -77,13 +77,14 @@ class Spieler
         }
     }
     public function updateGold($gold){
+        include("../src/sql.php");
         $sql_update = <<<EOT
             UPDATE users SET Gold = $gold WHERE UserID = $this->userid;
         EOT;
-        if (isset($conn)) {
-            if ($conn->query($sql_update) === TRUE) {
+        if (isset($_SESSION["Mysql"])) {
+            if ($_SESSION["Mysql"]->query($sql_update) === TRUE) {
             } else {
-                echo "Error: " . $sql_update . "<br>" . $conn->error;
+                echo "Error: " . $sql_update . "<br>" . $_SESSION["Mysql"]->error;
             }
         }
     }
@@ -92,10 +93,10 @@ class Spieler
         $sql_update = <<<EOT
             UPDATE users SET Metall = $metall WHERE UserID = $this->userid;
         EOT;
-        if (isset($conn)) {
-            if ($conn->query($sql_update) === TRUE) {
+        if (isset($_SESSION["Mysql"])) {
+            if ($_SESSION["Mysql"]->query($sql_update) === TRUE) {
             } else {
-                echo "Error: " . $sql_update . "<br>" . $conn->error;
+                echo "Error: " . $sql_update . "<br>" . $_SESSION["Mysql"]->error;
             }
         }
     }
@@ -103,10 +104,10 @@ class Spieler
         $sql_update = <<<EOT
             UPDATE users SET Energie = $energie WHERE UserID = $this->userid;
         EOT;
-        if (isset($conn)) {
-            if ($conn->query($sql_update) === TRUE) {
+        if (isset($_SESSION["Mysql"])) {
+            if ($_SESSION["Mysql"]->query($sql_update) === TRUE) {
             } else {
-                echo "Error: " . $sql_update . "<br>" . $conn->error;
+                echo "Error: " . $sql_update . "<br>" . $_SESSION["Mysql"]->error;
             }
         }
     }
