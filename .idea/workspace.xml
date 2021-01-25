@@ -22,21 +22,14 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/local" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eae08446-b442-4f2a-aede-320bac2c86b4" name="Default Changelist" comment="Max HTML+CSS">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/CreateSampleData.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/CreateSampleData.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Flotte.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Flotte.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Staat.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Staat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/gebäude.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/gebäude.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/planet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/sonnensystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/sonnensystem.php" afterDir="false" />
+    <list default="true" id="5852e152-e518-4555-aa56-b42d020aebc8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/local'">
+      <change beforePath="$PROJECT_DIR$/logic/test.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +70,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1jp3DEt7JmW8BGAvik3o4Adj0MB" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
