@@ -1,11 +1,17 @@
 <?php
 
-class planet{
+include_once("Gebäude.php");
 
-    private String $planet_name;
+class Planet
+{
+
+    private string $planet_name;
     private int $max_count_buildings;
     private int $curr_count_buildings;
     private int $planet_id;
+
+    private $buildings_on_planet = array();
+
 
     /**
      * @return String
@@ -72,13 +78,13 @@ class planet{
     }
 
 
-
     private bool $planet_exists;
 
-    public function __construct($planet_id, $planet_exists){
+    public function __construct($planet_id, $planet_exists)
+    {
         $this->planet_id = $planet_id;
 
-        if($planet_exists){
+        if ($planet_exists) {
             $querydb = <<<EOT
             SELECT planet_id, planet_name, max_count_buildings, curr_count_buildings
             FROM Planeten
@@ -90,10 +96,42 @@ class planet{
                 $this->planet_name = $results[0][1];
                 $this->max_count_buildings = $results[0][2];
                 $this->curr_count_buildings = $results[0][3];
-            }
-            else {
+                $this->getBuildings();
+                var_dump($this);
+            } else {
                 echo "<b>CONN NOT SET</b><br>";
             }
+        }
+    }
+
+    public function getBuildings()
+    {
+        $querydb = <<<EOT
+            SELECT building_id FROM Building WHERE belongs_to_planet = $this->planet_id
+            EOT;
+        if (isset($_SESSION["Mysql"])) {
+            $results = $_SESSION["Mysql"]->query($querydb)->fetch_all();
+            foreach ($results as $list) {
+                foreach ($list as $element) {
+                    array_push($this->buildings_on_planet, new Gebäude($element));
+                }
+            }
+        }
+    }
+
+    public function showBuildings()
+    {
+        $tt = "";
+        foreach ($this->buildings_on_planet as $building) {
+            $tt .= <<<EOT
+                <img class="col-sm-3">
+                    <div class="container" id="building-element">
+                        <img src=$building->building_pic width="200" height="200"></img><br>
+                        M: $building->metal_cost | E: $building->energy_cost | G: $building->gold_cost;
+                        <button type="button" class="btn btn-primary">Bauen</button>                                            
+                </div>
+                EOT;
+            return $tt;
         }
     }
 }

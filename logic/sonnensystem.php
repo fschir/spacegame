@@ -1,5 +1,5 @@
 <?php
-include("planet.php");
+include("Planet.php");
 function CreateSystem($StaatID)
 {
     $PlanetenAnzahl = random_int(3, 10);

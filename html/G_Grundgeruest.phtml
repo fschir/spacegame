@@ -50,32 +50,34 @@
         </div>
     </div>
     <div class="row" id="Planeten-row">
-        <div class="boxen">
-            <ul class="navbar-nav spezies">
-                <li class="nav-item" id="id-123">
-                    <a class="nav-link" href="#">Aktiver Planet: <?php echo $_SESSION["User"]->getStaat()->getStaatsname() ?></a>
-                </li>
-                <li class="nav-item" id="id-123">
-                    <a class="nav-link" href="#">Aktiver Planet: <?php echo $_SESSION["User"]->getStaat()->getStaatsname() ?></a>
-                </li>
-                <li class="nav-item" id="id-123">
-                    <a class="nav-link" href="#">Aktiver Planet: <?php echo $_SESSION["User"]->getStaat()->getStaatsname() ?></a>
-                </li>
-                <li class="nav-item" id="id-123">
-                    <a class="nav-link" href="#">Aktiver Planet: <?php echo $_SESSION["User"]->getStaat()->getStaatsname() ?></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm"></div>
-        <div class="col-sm">
-            <div class="Inhalt_main">
-                <h1>Hier soll das Spiel stattfinden</h1>
-                <p>Ja Moin ! </p>
+            <div class="col-sm">
+                Aktiver Planet: <?php echo $_SESSION["User"]
+                    ->getStaat()->getPlanet()->getPlanetName() ?>
             </div>
+
+            <div class="col-sm">
+                Max_Buildings: <?php echo $_SESSION["User"]
+                    ->getStaat()->getPlanet()->getMaxCountBuildings() ?>
+            </div>
+            <div class="col-sm">
+                Current_Buildings_on_Planet: <?php echo $_SESSION["User"]
+                    ->getStaat()->getPlanet()->getCurrCountBuildings() ?>
+            </div>
+            <div class="col-sm"></div>
+
         </div>
-        <div class="col-sm"></div>
+<div class="row">
+    <?php echo $_SESSION["User"]->getStaat()->getPlanet()->showBuildings() ?>
+</div>
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div class="Inhalt_main">
+                    <h1>Hier soll das Spiel stattfinden</h1>
+                    <p>Ja Moin ! </p>
+                </div>
+            </div>
+            <div class="col-sm"></div>
         </div>
     </div>
 </div>

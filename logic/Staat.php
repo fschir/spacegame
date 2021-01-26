@@ -1,11 +1,20 @@
 <?php
 
 include("../src/sql.php");
+include_once("../logic/Planet.php");
 
-class Staat_c{
+class Staat{
 
-    private planet_c $planet;
+    private Planet $planet;
     private int $staatID;
+
+    /**
+     * @return int
+     */
+    public function getStaatID(): int
+    {
+        return $this->staatID;
+    }
     private string $staatsname;
     private string $anfuehrer;
     private string $spezies;
@@ -13,6 +22,10 @@ class Staat_c{
 
     public function getStaatsname(){
         return $this->staatsname;
+    }
+
+    public function getPlanet(){
+        return $this->planet;
     }
 
     public function __construct($UserID){
@@ -35,7 +48,7 @@ class Staat_c{
         else {
             echo "<b>CONN NOT SET</b><br>";
         }
-        $this->planet = new planet_c($this->staatID());
+        $this->planet = new Planet($this->getStaatID(), TRUE);
     }
 
     private function retrievePlaneten()
@@ -52,14 +65,6 @@ class Staat_c{
                 $this->planeten = $results;
             }
         }
-    }
-
-    private function retrievePlaneten(){
-        $querydb = <<<EOT
-            SELECT 
-            FROM STAAT
-            WHERE UserID = $this->staatID;
-        EOT;
     }
 }
 

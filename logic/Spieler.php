@@ -9,7 +9,7 @@ class Spieler
     private int $metall;
     private int $gold;
     private int $energie;
-    private Staat_c $staat;
+    private Staat $staat;
 
 
     /**
@@ -66,7 +66,7 @@ class Spieler
         $this->gold = $gold;
         $this->energie = $energie;
         $this->userid = $userid;
-        $this->staat = new Staat_c($this->getUserID());
+        $this->staat = new Staat($this->getUserID());
         #var_dump($this);
     }
 
