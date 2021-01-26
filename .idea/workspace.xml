@@ -23,13 +23,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:lastminute" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:login" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5852e152-e518-4555-aa56-b42d020aebc8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/local'">
+      <change afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/Planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Planet.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +60,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lastminute" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,9 +129,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="FirefoxRemoteDebugType" port="5999">
       <method v="2" />
     </configuration>
@@ -231,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611603854733</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/local'">
+      <created>1611662719628</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1611662719628</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,21 +369,20 @@
     </state>
     <state x="827" y="318" key="NewPhpClassDialog/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611595664552" />
     <state x="1103" y="427" key="NewPhpClassDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607523300565" />
-    <state x="3369" y="841" key="NewPhpFileDialog" timestamp="1611664074297">
-      <screen x="2560" y="360" width="1858" height="1080" />
+    <state x="836" y="468" key="NewPhpFileDialog" timestamp="1611659315060">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="836" y="468" key="NewPhpFileDialog/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611659315060" />
     <state x="1114" y="628" key="NewPhpFileDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317175710" />
-    <state x="3369" y="841" key="NewPhpFileDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1611664074297" />
     <state x="1378" y="372" key="SettingsEditor" timestamp="1606317800816">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317800816" />
     <state x="1378" y="372" key="SettingsEditor/0.0.2560.1410/4480.360.1858.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1604497741595" />
-    <state x="654" y="325" key="Vcs.Push.Dialog.v2" timestamp="1611603858963">
+    <state x="654" y="325" key="Vcs.Push.Dialog.v2" timestamp="1611662729734">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="654" y="325" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611603858963" />
+    <state x="654" y="325" key="Vcs.Push.Dialog.v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611662729734" />
     <state x="872" y="437" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1611509717600" />
     <state x="3193" y="695" key="Vcs.Push.Dialog.v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1607527413141" />
     <state x="823" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611598738786">
@@ -385,15 +390,15 @@
     </state>
     <state x="823" y="460" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611598738786" />
     <state x="1097" y="618" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1610288089698" />
-    <state x="-1892" y="38" width="1809" height="906" key="dock-window-1" timestamp="1611662585310">
-      <screen x="-1920" y="0" width="1920" height="1050" />
+    <state x="-7" y="0" width="974" height="1057" maximized="true" key="dock-window-1" timestamp="1611665388159">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="763" y="0" width="699" height="723" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1611660299017" />
-    <state x="-1892" y="38" width="1809" height="906" key="dock-window-1/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611662585310" />
-    <state x="2412" y="68" width="699" height="723" key="dock-window-2" timestamp="1611662340318">
-      <screen x="1920" y="0" width="1920" height="1050" />
+    <state x="-7" y="0" width="974" height="1057" maximized="true" key="dock-window-1/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611665388159" />
+    <state x="-8" y="-8" width="699" height="723" maximized="true" key="dock-window-2" timestamp="1611665645575">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="2412" y="68" width="699" height="723" key="dock-window-2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611662340318" />
+    <state x="-8" y="-8" width="699" height="723" maximized="true" key="dock-window-2/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611665645575" />
     <state x="-1192" y="183" width="862" height="880" maximized="true" key="dock-window-3" timestamp="1611607267468">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>

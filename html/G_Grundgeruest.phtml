@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/game.js"></script>
 </head>
 <body>
 <div class="container">
@@ -27,13 +28,13 @@
                 <div class="collapse navbar-collapse" id="main-navigation">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Gold: <?php echo $_SESSION["User"]->getGold() ?></a>
+                            <a id="gold_counter" class="nav-link" href="#">Gold: <?php echo $_SESSION["User"]->getGold() ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Metall: <?php echo $_SESSION["User"]->getMetall() ?></a>
+                            <a id="metal_counter" class="nav-link" href="#">Metall: <?php echo $_SESSION["User"]->getMetall() ?></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Energie: <?php echo $_SESSION["User"]->getEnergie() ?></a>
+                            <a id="energy_counter" class="nav-link" href="#">Energie: <?php echo $_SESSION["User"]->getEnergie() ?></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">(Anzahl Schiffe)</a>
