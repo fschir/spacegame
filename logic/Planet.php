@@ -121,6 +121,7 @@ class Planet
 
     public function showBuildings()
     {
+        $test = "Hallo";
         $tt = "";
         foreach ($this->buildings_on_planet as $building) {
             $tt .= <<<EOT
@@ -128,7 +129,7 @@ class Planet
                     <div class="container" id="building-element">
                         <img src=$building->building_pic width="200" height="200"></img><br>
                         M: $building->metal_cost | E: $building->energy_cost | G: $building->gold_cost;
-                        <button type="button" class="btn btn-primary">Bauen</button>                                            
+                        <button type="button" class="btn btn-primary" onclick="big_fake()">Bauen</button>                                            
                 </div>
                 EOT;
             return $tt;
