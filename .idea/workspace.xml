@@ -23,15 +23,15 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:login" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:lastminute" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5852e152-e518-4555-aa56-b42d020aebc8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/local'">
-      <change afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Industry.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/game.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logic/Planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Planet.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +55,7 @@
     <option name="BRANCH" value="origin/master" />
   </component>
   <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
+    <option name="BRANCH" value="lastminute" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -124,6 +124,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAMPP\htdocs\sg\img" />
       <recent name="C:\xampp\htdocs\spacegame\img" />
       <recent name="C:\xampp\htdocs\spacegame\logic" />
     </key>
@@ -262,7 +263,8 @@
     <MESSAGE value="Spielelogik + SQL_Selects + Sql_Inserts" />
     <MESSAGE value="Max HTML+CSS" />
     <MESSAGE value="Merge remote-tracking branch 'origin/local'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/local'" />
+    <MESSAGE value="RessourcenSQLUpdates/Versuch PlanetenRetrieve" />
+    <option name="LAST_COMMIT_MESSAGE" value="RessourcenSQLUpdates/Versuch PlanetenRetrieve" />
   </component>
   <component name="WindowStateProjectService">
     <state x="258" y="321" key="#CLI_Interpreters" timestamp="1604488734037">

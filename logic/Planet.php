@@ -128,12 +128,13 @@ class Planet
                 <img class="col-sm-3">
                     <div class="container" id="building-element">
                         <img src=$building->building_pic width="200" height="200"></img><br>
-                        M: $building->metal_cost | E: $building->energy_cost | G: $building->gold_cost;
+                        M: $building->metal_cost | E: $building->energy_cost | G: $building->gold_cost
                         <button type="button" class="btn btn-primary" onclick="big_fake()">Bauen</button>                                            
                 </div>
                 EOT;
-            return $tt;
+
         }
+        return $tt;
     }
 }
 
