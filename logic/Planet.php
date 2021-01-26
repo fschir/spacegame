@@ -128,7 +128,7 @@ class Planet
                     <div class="container" id="building-element">
                         <img src=$building->building_pic width="200" height="200"></img><br>
                         M: $building->metal_cost | E: $building->energy_cost | G: $building->gold_cost;
-                        <button type="button" class="btn btn-primary">Bauen</button>                                            
+                        <button type="button" class="btn btn-primary" onclick="button($building->metalcost,$building->energy_cost,$building->gold_cost)">Bauen</button>                                            
                 </div>
                 EOT;
             return $tt;

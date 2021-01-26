@@ -23,24 +23,14 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:login" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:lastminute" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5852e152-e518-4555-aa56-b42d020aebc8" name="Default Changelist" comment="Merge remote-tracking branch 'origin/local'">
-      <change afterPath="$PROJECT_DIR$/img/Mine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/Solarpanel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/G_Grungeruest.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/G_Grungeruest.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/G_Grundgeruest.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/G_Grundgeruest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/html/G_Grundgeruest.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Spieler.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Spieler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/Staat.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Staat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/gebäude.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/gebäude.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Planet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logic/sonnensystem.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/sonnensystem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logic/Planet.php" beforeDir="false" afterPath="$PROJECT_DIR$/logic/Planet.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +45,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -67,7 +58,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="lastminute" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -136,6 +127,9 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="FirefoxRemoteDebugType" port="5999">
       <method v="2" />
     </configuration>
@@ -369,11 +363,12 @@
     </state>
     <state x="827" y="318" key="NewPhpClassDialog/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611595664552" />
     <state x="1103" y="427" key="NewPhpClassDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1607523300565" />
-    <state x="836" y="468" key="NewPhpFileDialog" timestamp="1611659315060">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="3369" y="841" key="NewPhpFileDialog" timestamp="1611664074297">
+      <screen x="2560" y="360" width="1858" height="1080" />
     </state>
     <state x="836" y="468" key="NewPhpFileDialog/0.0.1920.1050/1920.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1611659315060" />
     <state x="1114" y="628" key="NewPhpFileDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@0.0.2560.1410" timestamp="1606317175710" />
+    <state x="3369" y="841" key="NewPhpFileDialog/0.0.2560.1410/4480.360.1856.1080/2560.360.1858.1080@2560.360.1858.1080" timestamp="1611664074297" />
     <state x="1378" y="372" key="SettingsEditor" timestamp="1606317800816">
       <screen x="0" y="0" width="2560" height="1410" />
     </state>
