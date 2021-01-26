@@ -38,7 +38,8 @@ class Staat_c{
         $this->planet = new planet_c($this->staatID());
     }
 
-    private function retrievePlaneten(){
+    private function retrievePlaneten()
+    {
         $querydb = <<<EOT
             SELECT planet_id,planet_name,max_count_buildings,curr_count_buildings,belongs_to_staat
             FROM Planeten
@@ -51,5 +52,6 @@ class Staat_c{
                 $this->planeten = $results;
             }
         }
+    }
 }
 

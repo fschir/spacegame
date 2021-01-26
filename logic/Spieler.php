@@ -76,7 +76,6 @@ class Spieler
         }
     }
     public function updateGold($gold){
-        include("../src/sql.php");
         $sql_update = <<<EOT
             UPDATE users SET Gold = $gold WHERE UserID = $this->userid;
         EOT;
