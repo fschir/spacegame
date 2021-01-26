@@ -2,8 +2,9 @@
 
 include("../src/sql.php");
 
-class Staat_c
-{
+class Staat_c{
+
+    private planet_c $planet;
     private int $staatID;
     private string $staatsname;
     private string $anfuehrer;
@@ -33,6 +34,23 @@ class Staat_c
         }
         else {
             echo "<b>CONN NOT SET</b><br>";
+        }
+        $this->planet = new planet_c($this->staatID());
+    }
+
+    private function retrievePlaneten()
+    {
+        $querydb = <<<EOT
+            SELECT planet_id,planet_name,max_count_buildings,curr_count_buildings,belongs_to_staat
+            FROM Planeten
+            WHERE belongs_to_staat = $this->staatID;
+        EOT;
+
+        if (isset($_SESSION["Mysql"])) {
+            if ($_SESSION["Mysql"]->query($querydb) == TRUE) {
+                $results = $_SESSION["Mysql"]->query($querydb)->fetch_all();
+                $this->planeten = $results;
+            }
         }
     }
 
