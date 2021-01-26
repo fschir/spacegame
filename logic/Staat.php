@@ -14,8 +14,7 @@ class Staat_c
         return $this->staatsname;
     }
 
-    public function __construct($UserID)
-    {
+    public function __construct($UserID){
         $querydb = <<<EOT
             SELECT StaatID, Name, Anfuehrer, Spezie
             FROM STAAT
@@ -23,7 +22,6 @@ class Staat_c
         EOT;
 
         if (isset($_SESSION["Mysql"])) {
-            echo "conn set";
             if ($_SESSION["Mysql"]->query($querydb) == TRUE) {
                 $results = $_SESSION["Mysql"]->query($querydb)->fetch_all();
                 $this->staatID = $results[0][0];
@@ -31,10 +29,19 @@ class Staat_c
                 $this->anfuehrer = $results[0][2];
                 $this->spezies = $results[0][3];
             }
+
         }
         else {
             echo "<b>CONN NOT SET</b><br>";
         }
+    }
+
+    private function retrievePlaneten(){
+        $querydb = <<<EOT
+            SELECT 
+            FROM STAAT
+            WHERE UserID = $this->staatID;
+        EOT;
     }
 }
 

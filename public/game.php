@@ -25,7 +25,7 @@ if(!isset($_SESSION["User"])){
         }
     }
     #var_dump($_SESSION["User"]);
-    print($_SESSION["User"]->getStaat()->getStaatsname());
+    #print($_SESSION["User"]->getStaat()->getStaatsname());
 }
 
 
